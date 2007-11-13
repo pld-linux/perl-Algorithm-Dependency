@@ -9,7 +9,7 @@ Summary:	Algorithm::Dependency - Base class for implementing various dependency 
 Summary(pl.UTF-8):	Algorithm::Dependency - Podstawowa klasa do tworzenia różnych drzewek zależności
 Name:		perl-Algorithm-Dependency
 Version:	1.103
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
@@ -52,6 +52,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %{perl_vendorlib}/Algorithm/*.pm
-%{perl_vendorlib}/Algorithm/Dependency/*.pm
-%{perl_vendorlib}/Algorithm/Dependency/Source/*.pm
+%{perl_vendorlib}/Algorithm/Dependency
 %{_mandir}/man3/*
