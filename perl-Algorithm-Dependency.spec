@@ -6,15 +6,16 @@
 %define		pdir	Algorithm
 %define		pnam	Dependency
 Summary:	Algorithm::Dependency - Base class for implementing various dependency trees
-Summary(pl.UTF-8):	Algorithm::Dependency - Podstawowa klasa do tworzenia różnych drzewek zależności
+Summary(pl.UTF-8):	Algorithm::Dependency - podstawowa klasa do tworzenia różnych drzew zależności
 Name:		perl-Algorithm-Dependency
 Version:	1.104
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Algorithm/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	88a0a0214b44d49a0dfcb8bd070aaf4f
+URL:		http://search.cpan.org/dist/Algorithm-Dependency/
 %if %{with tests}
 BuildRequires:	perl-Config-Tiny
 BuildRequires:	perl-Params-Util
@@ -25,10 +26,10 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Base class for implementing various dependency trees
+Base class for implementing various dependency trees.
 
 %description -l pl.UTF-8
-Podstawowa klasa do tworzenia różnych drzewek zależności
+Podstawowa klasa do tworzenia różnych drzew zależności.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
