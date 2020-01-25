@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests	# don't perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	Algorithm
 %define		pnam	Dependency
 Summary:	Algorithm::Dependency - Base class for implementing various dependency trees
