@@ -7,21 +7,24 @@
 Summary:	Algorithm::Dependency - Base class for implementing various dependency trees
 Summary(pl.UTF-8):	Algorithm::Dependency - podstawowa klasa do tworzenia różnych drzew zależności
 Name:		perl-Algorithm-Dependency
-Version:	1.111
+Version:	1.112
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Algorithm/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	e4fed89126ad0fa7e9c41748dd8a91ce
-URL:		http://search.cpan.org/dist/Algorithm-Dependency/
+# Source0-md5:	d848624b0c483adf7f7f60f6ae2edc8f
+URL:		https://metacpan.org/release/Algorithm-Dependency
 %if %{with tests}
-BuildRequires:	perl-Config-Tiny
-BuildRequires:	perl-Params-Util
+BuildRequires:	perl(File::Spec) >= 0.80
+BuildRequires:	perl-Params-Util >= 0.31
+BuildRequires:	perl-Scalar-List-Utils >= 1.11
+BuildRequires:	perl-Test-ClassAPI >= 0.6
+BuildRequires:	perl-Test-Simple >= 0.47
 %endif
-BuildRequires:	perl-Test-ClassAPI
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
+BuildRequires:	rpmbuild(macros) >= 1.745
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
