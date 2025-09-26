@@ -1,6 +1,6 @@
 #
 # Conditional build:
-%bcond_without	tests	# don't perform "make test"
+%bcond_without	tests	# unit tests
 #
 %define		pdir	Algorithm
 %define		pnam	Dependency
@@ -12,9 +12,9 @@ Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/Algorithm/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	https://www.cpan.org/modules/by-module/Algorithm/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	d848624b0c483adf7f7f60f6ae2edc8f
-URL:		https://metacpan.org/release/Algorithm-Dependency
+URL:		https://metacpan.org/dist/Algorithm-Dependency
 %if %{with tests}
 BuildRequires:	perl(File::Spec) >= 0.80
 BuildRequires:	perl-Params-Util >= 0.31
